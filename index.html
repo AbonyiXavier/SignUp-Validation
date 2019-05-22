@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup Validation</title>
+    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <style>
+            .success, .error, .light {
+                color: white;
+                padding : 5px;
+                margin: 5px 0 15px 0; 
+            }
+    
+            .success {
+                background: green;
+            }
+    
+            .error {
+                background: red;
+            }
+
+            .light {
+                background:lightgray;
+                color: black;
+            }
+
+            .copy-right {
+                font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+                font-size: 10px;
+                color: #737373;
+            }
+
+            p {
+                font-size: 11px; 
+            }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div class="card card-body bg-info text-center">
+                        <h3 class="heading">Sign Up</h3>
+                        <p>Please fill out this form to register</p>
+                        <form id="sign-up">
+                            <div class="form-group">
+                                <input type="text" class="form-control"
+                                  id="first"  placeholder="First Name">
+                                  <div class="invalid-feedback">
+                                      Name must be between 2 and 15 Characters
+                                  </div>
+                            </div>
+                            <div class="form-group">
+                                    <input type="text" class="form-control"
+                                      id="last"  placeholder="last Name">
+                                      <div class="invalid-feedback">
+                                          Name must be between 2 and 15 Characters
+                                      </div>
+                                </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"
+                                  id="email"  placeholder="Email">
+                                  <div class="invalid-feedback">
+                                        Enter a valid Email
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                 <input type="text" class="form-control"
+                                   id="phone"   placeholder="Phone Number">
+                                     <div class="invalid-feedback">
+                                            Enter a valid Phone Number
+                                      </div>
+                                </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control"
+                                  id="password"  placeholder="Password">
+                                   <div class="invalid-feedback">
+                                         Password must contain 8 characters or Numbers
+                                  </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control"
+                                 id="confirm"   placeholder="Confirm Password">
+                                 <div class="invalid-feedback">
+                                        Password must contain 8 characters or Numbers
+                                 </div>
+                            </div>
+                            <input type="submit" id="submit" class="btn btn-outline-light btn-block mb-2">
+                            <div class="text-light">
+                                <p>Already have an account?</p>
+                                <span><a href="#" class="text-dark">Login</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+           </div>
+        </div>
+       
+    <footer class="copy-right text-center">
+            Francis Xavier Abonyi &copy; 2019
+        </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
